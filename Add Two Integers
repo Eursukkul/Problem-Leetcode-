@@ -1,0 +1,13 @@
+class Solution {
+    public int sum(int num1, int num2) {
+          int i = -200, j = 200;
+        while (i < j) {
+            int mid = (i + j) >> 1;
+            if (mid == num1 + num2) { return mid; }
+            if (mid <  num1 + num2) i = mid + 1;
+            if (mid >  num1 + num2) j = mid - 1;
+        }
+        return i;
+    }
+}
+    
