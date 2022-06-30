@@ -1,0 +1,11 @@
+Input: n = 5
+Output: 2
+Explanation: 5 is "101" in binary, with complement "010" in binary, which is 2 in base-10.
+
+class Solution {   
+public int bitwiseComplement(int N) {
+        int X = 1;
+        while (N > X) X = X * 2 + 1;
+        return X - N;
+    }
+}
